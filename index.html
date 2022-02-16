@@ -5,12 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rock-paper-scissors</title>
+    <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="game.js" defer></script>
 </head>
 <body>
-    <h1>Rock Paper Scissors game </h1>
-    <h1 id="demo"></h1>
-
-    
+    <header id="header">
+        <h1>Rock Paper Scissors</h1>
+        <div id="anime">
+          <p class="p">Do you know how to play the classic rock paper scissor game?</p>
+          <button id="yes">YES</button>
+          <button id="no">NO</button>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="images">
+                <button id="rock" class="button">
+                    <img src="photos/rock.jpg" alt="Rock" />
+                </button>
+                <button id="paper" class="button">
+                    <img src="photos/paper.jpg" alt="Paper" />
+                </button>
+                <button id="scissors" class="button">
+                    <img src="photos/scissor.jpg" alt="Scissors" />
+                </button>
+            </div>    
+        </div>
+        <div class="text">
+            <p>Player</p>
+            <p>Computer</p>
+        </div>
+        <div class="count">
+            <div id="ps">0</div>
+            <div id="cs">0</div>
+        </div>
+        <div id="results"></div>
+    </main>
+    <footer>tobuya&trade; &copy; The Odin Project</footer> 
 </body>
 </html>

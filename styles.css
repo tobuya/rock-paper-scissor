@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+h1 {
+    font-size: 5vw;
+}
+img {
+    width: 160px;
+    border-radius: 15px;
+}
+.button {
+    border: none;
+    background-color: cornsilk;
+}
+.button:hover {
+    padding: 0px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.text, .count {
+    display: flex;
+    font-weight: bold;
+    font-size: 30px;
+}
+.text {
+    gap: 20px;
+}
+.count {
+    gap: 100px;
+}
+#results{
+    font-weight: bold;
+    font-size: 40px;
+}
+#yes {
+    background: green;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#no {
+    background: red;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#yes:hover {
+    background: white;
+    border: 1px solid green;
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#no:hover {
+    background: white;
+    border: 1px solid red;
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+header {
+    padding-bottom: 20px;
+}
+.p {
+    font-size: 20px;
+}
+
+span {
+    opacity: 0;
+    transition: all 20s ease;
+}
+span.fade {
+    opacity: 1;
+}
+
+.winner {
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black,0 -1px black;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.anime {
+    opacity: 0;
+    -webkit-transition: opacity 1.0s linear 0s;
+    transition: opacity 1.0s linear 0s;
+}
