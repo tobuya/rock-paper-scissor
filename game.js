@@ -137,12 +137,12 @@ function resetGame() {
 yes.addEventListener("click", () => {
     header.removeChild(onclickYesNo);
     const instruction = document.createElement("p");
-    instruction.textContent = "First with 5 points wins the game. Goodluck!";
+    instruction.textContent = "First with 5 points wins the game. Good luck!!";
     header.appendChild(instruction);
 });
 
 let idx = 0;
-let guideline = "We have 3 options: Rock, Paper and Scisssor.Rock beats Scissor || Scissor beats Paper || Paper beats Rock.You select 1 option and play a 5 round game against the computer.Each option that beats the other option earns a point for the selector.First with 5 points wins the game! Goodluck!!";
+let guideline = "We have 3 options: Rock, Paper and Scissor.Rock beats Scissor || Scissor beats Paper || Paper beats Rock.You select 1 option and play a 5 round game against the computer.Each option that beats the other option earns a point for the selector.First with 5 points wins the game! Good luck!!";
 let text = guideline.split(".");
 
 function nextArrayContent(){
@@ -156,7 +156,7 @@ function nextArrayContent(){
 function textSlide() {
     onclickYesNo.innerHTML = text[idx];
     onclickYesNo.style.opacity = 1;
-    setTimeout("nextArrayContent()", 2000);
+    setTimeout("nextArrayContent()", 4000);
 }
 no.addEventListener("click", textSlide);
 
